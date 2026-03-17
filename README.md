@@ -18,6 +18,6 @@ The lab demonstrates how organisations manage users, control access, and enforce
 ## Objectives
 ## Architecture
 ## Implementation Steps
-## Security Controls लागू
+## Security Controls
 ## Monitoring & Logging
 ## Key Learnings
