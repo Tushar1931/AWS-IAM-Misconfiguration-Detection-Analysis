@@ -13,3 +13,11 @@ The lab demonstrates how organisations manage users, control access, and enforce
 - Conditional Access policies
 - Application access management
 - Sign-in monitoring and log analysis
+
+## Overview
+## Objectives
+## Architecture
+## Implementation Steps
+## Security Controls लागू
+## Monitoring & Logging
+## Key Learnings
