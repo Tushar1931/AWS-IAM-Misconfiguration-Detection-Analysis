@@ -18,7 +18,6 @@
 - [Key Finding](#-key-finding)
 - [Remediation](#-remediation)
 - [Lessons Learned](#-lessons-learned)
-- [Screenshots](#-screenshots)
 
 
 ## Project Overview
