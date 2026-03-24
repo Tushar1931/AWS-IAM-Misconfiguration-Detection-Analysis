@@ -2,7 +2,7 @@
 
 > A hands-on AWS security lab simulating a real-world IAM privilege escalation attack — from intentional misconfiguration through suspicious activity simulation, CloudTrail log analysis, and full remediation. Built to demonstrate identity security fundamentals and cloud threat detection skills.
 
-## 📌 Table of Contents
+## Table of Contents
  
 - [Project Overview](#-project-overview)
 - [Objectives](#-objectives)
@@ -33,12 +33,12 @@ This project reflects real-world scenarios encountered in **Identity Security An
  
 ## Objectives
  
-- ✅ Design a least-privilege IAM architecture using users, groups, and policies
-- ✅ Intentionally introduce a critical misconfiguration (wildcard `*:*` permissions) to simulate poor IAM hygiene
-- ✅ Enable persistent, multi-region audit logging via AWS CloudTrail
-- ✅ Simulate reconnaissance and privilege escalation behaviour from a misconfigured account
-- ✅ Analyse CloudTrail logs to detect and interpret suspicious API activity
-- ✅ Apply remediation and document security recommendations
+- Design a least-privilege IAM architecture using users, groups, and policies
+- Intentionally introduce a critical misconfiguration (wildcard `*:*` permissions) to simulate poor IAM hygiene
+- Enable persistent, multi-region audit logging via AWS CloudTrail
+- Simulate reconnaissance and privilege escalation behaviour from a misconfigured account
+- Analyse CloudTrail logs to detect and interpret suspicious API activity
+- Apply remediation and document security recommendations
  
 ---
 
@@ -120,7 +120,7 @@ Group: LimitedAccess
  
 **Attached this policy directly to `dev-user`** — bypassing the group-based least-privilege design.
  
-⚠️ **Why this is a critical misconfiguration:**
+ **Why this is a critical misconfiguration:**
 - Violates the **principle of least privilege**
 - Grants unrestricted access across all AWS services and resources
 - Represents **direct policy attachment overriding group-level access controls**
@@ -152,7 +152,7 @@ IAM is a global AWS service. To capture IAM API activity, the trail must be conf
 | Data events (S3 object-level, Lambda invocations) | ❌ Not enabled |
 | Insights events | ❌ Not enabled |
  
-> 📝 **Note:** AWS retains only 90 days of management events via Event History. The CloudTrail trail was configured to enable **persistent logging beyond 90 days** and allow deeper forensic analysis from S3.
+> **Note:** AWS retains only 90 days of management events via Event History. The CloudTrail trail was configured to enable **persistent logging beyond 90 days** and allow deeper forensic analysis from S3.
  
 **Log verification:**
 - Accessed Event History in the CloudTrail console
@@ -252,7 +252,7 @@ This finding demonstrates three compounding failures:
  
 ### Actions Taken
  
-- ✅ **Removed** the direct attachment of the over-permissive `*:*` custom policy from `dev-user`
+ **Removed** the direct attachment of the over-permissive `*:*` custom policy from `dev-user`
  
 ### Recommendations
  
