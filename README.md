@@ -284,3 +284,8 @@ This finding demonstrates three compounding failures:
 - Log analysis is only useful if logging was configured correctly from the start — security must be proactive, not reactive
  
 ---
+
+## Author
+ 
+**Tushar Sharma**  
+Information Security Professional | IAM & GRC Specialist
